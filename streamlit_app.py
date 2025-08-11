@@ -16,7 +16,7 @@ from sklearn import tree
 from sklearn.tree import DecisionTreeRegressor 
 
 # --- Load your saved models ---
-with open('multilinear_regression_model.pkl', 'rb') as f:
+with open('multilinear_regression_modelnolog.pkl', 'rb') as f:
     linear_model = pickle.load(f)
 
 with open('decision_tree_regressor.pkl', 'rb') as f:
@@ -143,6 +143,7 @@ if uploaded_file is not None:
     except Exception as e:
 
         st.error(f"Error reading file: {e}")
+
 
 
 
